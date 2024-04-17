@@ -48,7 +48,7 @@ class Controle{
             $result = $this->accessBDD->select($table, $champs);
         }
         if (gettype($result) != "array" && ($result == false || $result == null)){
-            $this->reponse(400, "requete invalide");
+            $this->reponse(400, "requete invalide", $result);
         }else{	
             $this->reponse(200, "OK", $result);
         }
@@ -77,6 +77,9 @@ class Controle{
 
         if ($table == "commandedocument"){
             $result = $this->accessBDD->insertCommande($champs);
+        }
+        elseif ($table == "abonnement"){
+            $result = $this->accessBDD->insertAbonnement($champs);
         }
         else {
             $result = $this->accessBDD->insertOne($table, $champs);

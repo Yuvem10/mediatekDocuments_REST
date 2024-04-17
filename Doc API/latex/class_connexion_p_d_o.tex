@@ -1,0 +1,76 @@
+\doxysection{Connexion\+PDO Class Reference}
+\hypertarget{class_connexion_p_d_o}{}\label{class_connexion_p_d_o}\index{ConnexionPDO@{ConnexionPDO}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_connexion_p_d_o_a8cb01912e0213d8baba39aafe5bb3685}{\+\_\+\+\_\+construct}} (\$login, \$mdp, \$bd, \$serveur, \$port)
+\item 
+\mbox{\hyperlink{class_connexion_p_d_o_a94735ddc9d94f72c97933bbff6726b19}{execute}} (\$requete, \$param=null)
+\item 
+\mbox{\hyperlink{class_connexion_p_d_o_ae308b70d1266b67e85cdb88c60441ec2}{query}} (\$requete, \$param=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de connexion et d\textquotesingle{}exécution des requêtes dans une BDD My\+SQL 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_connexion_p_d_o_a8cb01912e0213d8baba39aafe5bb3685}\label{class_connexion_p_d_o_a8cb01912e0213d8baba39aafe5bb3685} 
+\index{ConnexionPDO@{ConnexionPDO}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ConnexionPDO@{ConnexionPDO}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$login,  }\item[{}]{\$mdp,  }\item[{}]{\$bd,  }\item[{}]{\$serveur,  }\item[{}]{\$port }\end{DoxyParamCaption})}
+
+constructeur privé \+: connexion à la BDD 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$login} & \\
+\hline
+string & {\em \$mdp} & \\
+\hline
+string & {\em \$bd} & \\
+\hline
+string & {\em \$serveur} & \\
+\hline
+int & {\em \$port} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_connexion_p_d_o_a94735ddc9d94f72c97933bbff6726b19}\label{class_connexion_p_d_o_a94735ddc9d94f72c97933bbff6726b19} 
+\index{ConnexionPDO@{ConnexionPDO}!execute@{execute}}
+\index{execute@{execute}!ConnexionPDO@{ConnexionPDO}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily execute (\begin{DoxyParamCaption}\item[{}]{\$requete,  }\item[{}]{\$param = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Exécution d\textquotesingle{}une requête de mise à jour (insert, update, delete) 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$requete} & \\
+\hline
+array & {\em \$param} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+résultat requête (booléen) 
+\end{DoxyReturn}
+\Hypertarget{class_connexion_p_d_o_ae308b70d1266b67e85cdb88c60441ec2}\label{class_connexion_p_d_o_ae308b70d1266b67e85cdb88c60441ec2} 
+\index{ConnexionPDO@{ConnexionPDO}!query@{query}}
+\index{query@{query}!ConnexionPDO@{ConnexionPDO}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily query (\begin{DoxyParamCaption}\item[{}]{\$requete,  }\item[{}]{\$param = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Exécution d\textquotesingle{}une requête select retournant 0 à plusieurs lignes 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$requete} & \\
+\hline
+array & {\em \$param} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lignes récupérées 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Connexion\+PDO.\+php\end{DoxyCompactItemize}

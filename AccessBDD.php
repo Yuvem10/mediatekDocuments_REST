@@ -6,10 +6,10 @@ include_once("ConnexionPDO.php");
  */
 class AccessBDD {
 	
-    public $login="root";
-    public $mdp="";
-    public $bd="mediatek86";
-    public $serveur="127.0.0.1";
+    public $login="u482619961_mateo";
+    public $mdp="Inkainka2001";
+    public $bd="u482619961_mediatek86";
+    public $serveur="localhost";
     public $port="3306";	
     public $conn = null;
 
@@ -239,6 +239,26 @@ class AccessBDD {
         }
         return  $this->insertOne( "commandedocument", $champsCommandeDocument);
     }
+
+    /**
+     * ajout d'un abonnement dans la table abonnement
+     * @param array $champs nom et valeur de chaque champs de l'abonnement
+     * @return true si l'ajout a fonctionné
+     */
+    public function insertAbonnement($champs)
+    {
+        $champsCommande = [ "id" => $champs["id"], "dateCommande" => $champs["dateCommande"],
+            "montant" => $champs["montant"]];
+
+        $champsAbonnement = ["id" => $champs["id"], "dateFinAbonnement" => $champs["dateFinAbonnement"], "idRevue" => $champs["idRevue"]];
+
+        $result = $this->insertOne("commande", $champsCommande);
+        if ($result == null || $result == false){
+            return null;
+        }
+        return $this->insertOne("abonnement", $champsAbonnement);
+    }
+
 
     /**
      * modification d'une ligne dans une table

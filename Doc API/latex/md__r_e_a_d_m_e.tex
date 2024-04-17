@@ -1,0 +1,36 @@
+\chapter{rest\+\_\+mediatekdocuments}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{rest\_mediatekdocuments@{rest\_mediatekdocuments}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+{\bfseries{Attention, si vous utilisez une version de PHP \texorpdfstring{$>$}{>}= à 8.\+1, alors, dans le fichier mediatekdocuments.\+php, vous devez remplacer tous les "{}\+FILTER\+\_\+\+SANITIZE\+\_\+\+STRING"{} par "{}\+FILTER\+\_\+\+SANITIZE\+\_\+\+FULL\+\_\+\+SPECIAL\+\_\+\+CHARS"{}.}}
+
+Cette API est utilisée par l\textquotesingle{}application Mediatek\+Documents écrite en C\# et récupérable dans le dépôt suivant \+:~\newline
+ \href{https://github.com/CNED-SLAM/MediaTekDocuments}{\texttt{ https\+://github.\+com/\+CNED-\/\+SLAM/\+Media\+Tek\+Documents}}~\newline
+ Le readme présente l\textquotesingle{}application et aussi le rôle de l\textquotesingle{}API. \hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Présentation}{Présentation}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Cette API, écrite en PHP, permet d\textquotesingle{}exécuter des requêtes SQL sur la BDD Mediatek86 créée avec le SGBDR My\+SQL.~\newline
+ Elle est accessible via une authentification "{}basique"{} (avec login="{}admin"{}, pwd="{}adminpwd"{}).~\newline
+ Sa vocation actuelle est de répondre aux demandes de l\textquotesingle{}applicaton Mediatek\+Documents. \hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Fichiers de l\textquotesingle{}API}{Fichiers de l\textquotesingle{}API}}\label{md__r_e_a_d_m_e_autotoc_md2}
+Cette API contient les fichiers suivants \+:~\newline
+
+\begin{DoxyItemize}
+\item .htaccess \+: contient les règles de réécriture pour l\textquotesingle{}accès à mediatekdocuments.\+php avec les bons paramètres.~\newline
+
+\item Mediatekdocuments.\+php \+: point d\textquotesingle{}entrée de l\textquotesingle{}api, contrôle l\textquotesingle{}accès sécurisé, récupère les paramètres puis, suivant le verbe utilisé (GET, POST, PUT, DELETE), appelle la méthode concernée dans la classe \doxylink{class_controle}{Controle}.~\newline
+
+\item Controle.\+php \+: suivant les demandes, appelle les méthodes concernées dans la classe Acces\+BDD puis retourne le résultat au format json.~\newline
+
+\item Acces\+BDD.\+php \+: construit les requêtes SQL avec les collections de paramètres, demande à la classe \doxylink{class_connexion_p_d_o}{Connexion\+PDO} de les exécuter et retourne le résultat.~\newline
+
+\item Connexion\+PDO.\+php \+: se connecte à la BDD, construit les requêtes en intégrant les paramètres, les exécute et retourne le résultat. 
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Installation de l\textquotesingle{}API en local}{Installation de l\textquotesingle{}API en local}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Pour tester l\textquotesingle{}application Mediatek\+Documents en local, il faut aussi installer l\textquotesingle{}API. Voici le mode opératoire \+:~\newline
+
+\begin{DoxyItemize}
+\item Installer les outils nécessaires (Wamp\+Server ou équivalent, Netbeans ou équivalent, Postman pour les tests).~\newline
+
+\item Télécharger le zip du code de l\textquotesingle{}API et le dézipper dans le dossier www de wampserver (renommer le dossier en "{}rest\+\_\+mediatekdocuments"{}, donc en enlevant "{}\+\_\+master"{}).~\newline
+
+\item Récupérer le script metiak86.\+sql en racine du projet puis, avec php\+My\+Admin, créer la BDD mediatek86 et, dans cette BDD, exécuter le script pour remplir la BDD.~\newline
+
+\item Ouvrir l\textquotesingle{}API dans Netbeans pour pouvoir analyser le code et le faire évoluer suivant les besoins. 
+\end{DoxyItemize}

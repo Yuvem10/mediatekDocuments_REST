@@ -1,0 +1,97 @@
+\doxysection{Controle Class Reference}
+\hypertarget{class_controle}{}\label{class_controle}\index{Controle@{Controle}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controle_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_controle_a44c13d145f073ee183ec321af80805bc}{get}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_controle_a84056401e569445e5723b27695e0b1db}{delete}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_controle_a4c4524fddd9526e8fc5d0dc0673d5f64}{post}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_controle_ac38351596a930bc8ee182c809016507b}{put}} (\$table, \$id, \$champs)
+\item 
+\mbox{\hyperlink{class_controle_aea5ca50ae45bf5fa2bcc892eb6a5ce90}{unauthorized}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contrôleur \+: reçoit et traite les demandes du point d\textquotesingle{}entrée 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_controle_a095c5d389db211932136b53f25f39685}\label{class_controle_a095c5d389db211932136b53f25f39685} 
+\index{Controle@{Controle}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Controle@{Controle}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructeur \+: récupération de l\textquotesingle{}instance d\textquotesingle{}accès à la BDD 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controle_a84056401e569445e5723b27695e0b1db}\label{class_controle_a84056401e569445e5723b27695e0b1db} 
+\index{Controle@{Controle}!delete@{delete}}
+\index{delete@{delete}!Controle@{Controle}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily delete (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+requete arrivée en DELETE 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+array & {\em \$champs} & nom et valeur des champs \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_controle_a44c13d145f073ee183ec321af80805bc}\label{class_controle_a44c13d145f073ee183ec321af80805bc} 
+\index{Controle@{Controle}!get@{get}}
+\index{get@{get}!Controle@{Controle}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+requete arrivée en GET (select) 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+type & {\em \$champs} & nom et valeur des champs de recherche \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_controle_a4c4524fddd9526e8fc5d0dc0673d5f64}\label{class_controle_a4c4524fddd9526e8fc5d0dc0673d5f64} 
+\index{Controle@{Controle}!post@{post}}
+\index{post@{post}!Controle@{Controle}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily post (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+requete arrivée en POST (insert) 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+array & {\em \$champs} & nom et valeur des champs \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_controle_ac38351596a930bc8ee182c809016507b}\label{class_controle_ac38351596a930bc8ee182c809016507b} 
+\index{Controle@{Controle}!put@{put}}
+\index{put@{put}!Controle@{Controle}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily put (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$id,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+requete arrivée en PUT (update) 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+string & {\em \$id} & valeur de l\textquotesingle{}id \\
+\hline
+array & {\em \$champs} & nom et valeur des champs \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_controle_aea5ca50ae45bf5fa2bcc892eb6a5ce90}\label{class_controle_aea5ca50ae45bf5fa2bcc892eb6a5ce90} 
+\index{Controle@{Controle}!unauthorized@{unauthorized}}
+\index{unauthorized@{unauthorized}!Controle@{Controle}}
+\doxysubsubsection{\texorpdfstring{unauthorized()}{unauthorized()}}
+{\footnotesize\ttfamily unauthorized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+login et/ou pwd incorrects 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controle.\+php\end{DoxyCompactItemize}

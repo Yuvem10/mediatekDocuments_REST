@@ -1,0 +1,269 @@
+\doxysection{Access\+BDD Class Reference}
+\hypertarget{class_access_b_d_d}{}\label{class_access_b_d_d}\index{AccessBDD@{AccessBDD}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a043428278dfb1869faf814bdeac72904}{select\+All}} (\$table)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a025ce81c2f7b964ba830d340c5ad211d}{select}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a36f2cfc875691049e33bf85247c12e46}{select\+Table\+Simple}} (\$table)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_aea9418585c8c172ac45c80b206a1b759}{select\+Table}} (\$table)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a932ba516c9d75fc406e4bc2e3d1ac081}{select\+Table\+On\+Conditons}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_adb9efdd21be2e080736956fb0a2d3189}{select\+All\+Livres}} ()
+\item 
+\mbox{\hyperlink{class_access_b_d_d_af793cfdc9eb6216afc196ad5556e99c7}{select\+All\+Dvd}} ()
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a5ca168fdd5613487d36a04e7d0d54234}{select\+All\+Revues}} ()
+\item 
+\mbox{\hyperlink{class_access_b_d_d_ab98a15a980ab8c19960ea70965eed488}{select\+Exemplaires\+Revue}} (\$id)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a84056401e569445e5723b27695e0b1db}{delete}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a4e733f428c147deb9d42b137e6b70af6}{insert\+One}} (\$table, \$champs)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a4a87dc66e6d4112ca3a38c3a37d8dee0}{insert\+Commande}} (\$champs)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a5aae6076809effab8345621e5ec7cd82}{insert\+Abonnement}} (\$champs)
+\item 
+\mbox{\hyperlink{class_access_b_d_d_a84cb9767ebfa6a8c047c0eb37bfb2e6a}{update\+One}} (\$table, \$id, \$champs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_access_b_d_d_afc31993e855f9631572adfedcfe6f34b}\label{class_access_b_d_d_afc31993e855f9631572adfedcfe6f34b} 
+{\bfseries \$login} ="{}root"{}
+\item 
+\Hypertarget{class_access_b_d_d_a8a65334de2f0d486a42b02ecf82fe8fb}\label{class_access_b_d_d_a8a65334de2f0d486a42b02ecf82fe8fb} 
+{\bfseries \$mdp} ="{}"{}
+\item 
+\Hypertarget{class_access_b_d_d_acc3591d1c0945e5b934207901d1e06c0}\label{class_access_b_d_d_acc3591d1c0945e5b934207901d1e06c0} 
+{\bfseries \$bd} ="{}mediatek86"{}
+\item 
+\Hypertarget{class_access_b_d_d_a4ffb9d7258acf24e1ff550bceba60ed2}\label{class_access_b_d_d_a4ffb9d7258acf24e1ff550bceba60ed2} 
+{\bfseries \$serveur} ="{}127.\+0.\+0.\+1"{}
+\item 
+\Hypertarget{class_access_b_d_d_aa0787efab4b22e8a212882f3409d4c77}\label{class_access_b_d_d_aa0787efab4b22e8a212882f3409d4c77} 
+{\bfseries \$port} ="{}3306"{}
+\item 
+\Hypertarget{class_access_b_d_d_aa8a5a87b9c1a6a0819b88447cbe41877}\label{class_access_b_d_d_aa8a5a87b9c1a6a0819b88447cbe41877} 
+{\bfseries \$conn} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de construction des requêtes SQL à envoyer à la BDD 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_access_b_d_d_a095c5d389db211932136b53f25f39685}\label{class_access_b_d_d_a095c5d389db211932136b53f25f39685} 
+\index{AccessBDD@{AccessBDD}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructeur \+: demande de connexion à la BDD 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_access_b_d_d_a84056401e569445e5723b27695e0b1db}\label{class_access_b_d_d_a84056401e569445e5723b27695e0b1db} 
+\index{AccessBDD@{AccessBDD}!delete@{delete}}
+\index{delete@{delete}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily delete (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+suppresion d\textquotesingle{}une ou plusieurs lignes dans une table 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+array & {\em \$champs} & nom et valeur de chaque champs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la suppression a fonctionné 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a5aae6076809effab8345621e5ec7cd82}\label{class_access_b_d_d_a5aae6076809effab8345621e5ec7cd82} 
+\index{AccessBDD@{AccessBDD}!insertAbonnement@{insertAbonnement}}
+\index{insertAbonnement@{insertAbonnement}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{insertAbonnement()}{insertAbonnement()}}
+{\footnotesize\ttfamily insert\+Abonnement (\begin{DoxyParamCaption}\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+ajout d\textquotesingle{}un abonnement dans la table abonnement 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$champs} & nom et valeur de chaque champs de l\textquotesingle{}abonnement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si l\textquotesingle{}ajout a fonctionné 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a4a87dc66e6d4112ca3a38c3a37d8dee0}\label{class_access_b_d_d_a4a87dc66e6d4112ca3a38c3a37d8dee0} 
+\index{AccessBDD@{AccessBDD}!insertCommande@{insertCommande}}
+\index{insertCommande@{insertCommande}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{insertCommande()}{insertCommande()}}
+{\footnotesize\ttfamily insert\+Commande (\begin{DoxyParamCaption}\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+ajout d\textquotesingle{}une commande dans les tables commande et commandedocument 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$champs} & nom et valeur de chaque champs de la commande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si l\textquotesingle{}ajout a fonctionné 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a4e733f428c147deb9d42b137e6b70af6}\label{class_access_b_d_d_a4e733f428c147deb9d42b137e6b70af6} 
+\index{AccessBDD@{AccessBDD}!insertOne@{insertOne}}
+\index{insertOne@{insertOne}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{insertOne()}{insertOne()}}
+{\footnotesize\ttfamily insert\+One (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+ajout d\textquotesingle{}une ligne dans une table 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+array & {\em \$champs} & nom et valeur de chaque champs de la ligne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si l\textquotesingle{}ajout a fonctionné 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a025ce81c2f7b964ba830d340c5ad211d}\label{class_access_b_d_d_a025ce81c2f7b964ba830d340c5ad211d} 
+\index{AccessBDD@{AccessBDD}!select@{select}}
+\index{select@{select}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily select (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+récupération des lignes concernées 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+array & {\em \$champs} & nom et valeur de chaque champs de recherche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lignes répondant aux critères de recherches 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a043428278dfb1869faf814bdeac72904}\label{class_access_b_d_d_a043428278dfb1869faf814bdeac72904} 
+\index{AccessBDD@{AccessBDD}!selectAll@{selectAll}}
+\index{selectAll@{selectAll}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectAll()}{selectAll()}}
+{\footnotesize\ttfamily select\+All (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})}
+
+récupération de toutes les lignes d\textquotesingle{}une table 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lignes de la requete 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_af793cfdc9eb6216afc196ad5556e99c7}\label{class_access_b_d_d_af793cfdc9eb6216afc196ad5556e99c7} 
+\index{AccessBDD@{AccessBDD}!selectAllDvd@{selectAllDvd}}
+\index{selectAllDvd@{selectAllDvd}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectAllDvd()}{selectAllDvd()}}
+{\footnotesize\ttfamily select\+All\+Dvd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+récupération de toutes les lignes de la table DVD et les tables associées \begin{DoxyReturn}{Returns}
+lignes de la requete 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_adb9efdd21be2e080736956fb0a2d3189}\label{class_access_b_d_d_adb9efdd21be2e080736956fb0a2d3189} 
+\index{AccessBDD@{AccessBDD}!selectAllLivres@{selectAllLivres}}
+\index{selectAllLivres@{selectAllLivres}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectAllLivres()}{selectAllLivres()}}
+{\footnotesize\ttfamily select\+All\+Livres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+récupération de toutes les lignes de la table Livre et les tables associées \begin{DoxyReturn}{Returns}
+lignes de la requete 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a5ca168fdd5613487d36a04e7d0d54234}\label{class_access_b_d_d_a5ca168fdd5613487d36a04e7d0d54234} 
+\index{AccessBDD@{AccessBDD}!selectAllRevues@{selectAllRevues}}
+\index{selectAllRevues@{selectAllRevues}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectAllRevues()}{selectAllRevues()}}
+{\footnotesize\ttfamily select\+All\+Revues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+récupération de toutes les lignes de la table Revue et les tables associées \begin{DoxyReturn}{Returns}
+lignes de la requete 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_ab98a15a980ab8c19960ea70965eed488}\label{class_access_b_d_d_ab98a15a980ab8c19960ea70965eed488} 
+\index{AccessBDD@{AccessBDD}!selectExemplairesRevue@{selectExemplairesRevue}}
+\index{selectExemplairesRevue@{selectExemplairesRevue}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectExemplairesRevue()}{selectExemplairesRevue()}}
+{\footnotesize\ttfamily select\+Exemplaires\+Revue (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+récupération de tous les exemplaires d\textquotesingle{}une revue 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & id de la revue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lignes de la requete 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_aea9418585c8c172ac45c80b206a1b759}\label{class_access_b_d_d_aea9418585c8c172ac45c80b206a1b759} 
+\index{AccessBDD@{AccessBDD}!selectTable@{selectTable}}
+\index{selectTable@{selectTable}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectTable()}{selectTable()}}
+{\footnotesize\ttfamily select\+Table (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})}
+
+récupération de toutes les lignes d\textquotesingle{}une table 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+toutes les lignes de la table 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a932ba516c9d75fc406e4bc2e3d1ac081}\label{class_access_b_d_d_a932ba516c9d75fc406e4bc2e3d1ac081} 
+\index{AccessBDD@{AccessBDD}!selectTableOnConditons@{selectTableOnConditons}}
+\index{selectTableOnConditons@{selectTableOnConditons}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectTableOnConditons()}{selectTableOnConditons()}}
+{\footnotesize\ttfamily select\+Table\+On\+Conditons (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+récupération des lignes d\textquotesingle{}une table dont les champs concernés correspondent aux valeurs 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$table} & \\
+\hline
+type & {\em \$champs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a36f2cfc875691049e33bf85247c12e46}\label{class_access_b_d_d_a36f2cfc875691049e33bf85247c12e46} 
+\index{AccessBDD@{AccessBDD}!selectTableSimple@{selectTableSimple}}
+\index{selectTableSimple@{selectTableSimple}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{selectTableSimple()}{selectTableSimple()}}
+{\footnotesize\ttfamily select\+Table\+Simple (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})}
+
+récupération de toutes les lignes d\textquotesingle{}une table simple (qui contient juste id et libelle) 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lignes triées sur lebelle 
+\end{DoxyReturn}
+\Hypertarget{class_access_b_d_d_a84cb9767ebfa6a8c047c0eb37bfb2e6a}\label{class_access_b_d_d_a84cb9767ebfa6a8c047c0eb37bfb2e6a} 
+\index{AccessBDD@{AccessBDD}!updateOne@{updateOne}}
+\index{updateOne@{updateOne}!AccessBDD@{AccessBDD}}
+\doxysubsubsection{\texorpdfstring{updateOne()}{updateOne()}}
+{\footnotesize\ttfamily update\+One (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$id,  }\item[{}]{\$champs }\end{DoxyParamCaption})}
+
+modification d\textquotesingle{}une ligne dans une table 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & nom de la table \\
+\hline
+string & {\em \$id} & id de la ligne à modifier \\
+\hline
+array & {\em \$param} & nom et valeur de chaque champs de la ligne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la modification a fonctionné 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Access\+BDD.\+php\end{DoxyCompactItemize}
