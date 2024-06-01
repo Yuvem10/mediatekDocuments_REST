@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.11.7-MariaDB, for Linux (x86_64)
 --
--- Host: localhost    Database: u482619961_mediatek86
+-- Host: localhost    Database: mediatek86
 -- ------------------------------------------------------
 -- Server version	10.11.7-MariaDB-cll-lve
 
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `u482619961_mediatek86`
+-- Current Database: `mediatek86`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `u482619961_mediatek86` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `mediatek86` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
 
-USE `u482619961_mediatek86`;
+USE `mediatek86`;
 
 --
 -- Table structure for table `abonnement`
