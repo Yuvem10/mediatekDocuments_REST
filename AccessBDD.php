@@ -6,9 +6,9 @@ include_once("ConnexionPDO.php");
  */
 class AccessBDD {
 	
-    public $login="u482619961_mateo";
-    public $mdp="Inkainka2001";
-    public $bd="u482619961_mediatek86";
+    public $login="root";
+    public $mdp="";
+    public $bd="mediatek86";
     public $serveur="localhost";
     public $port="3306";	
     public $conn = null;
@@ -34,6 +34,10 @@ class AccessBDD {
             switch ($table) {
                 case "livre" :
                     return $this->selectAllLivres();
+                case "commandedocument":
+                    return $this->selectAllCommandeDocument();
+                case "abonnement":
+                    return $this->selectAllAbonnements();
                 case "dvd" :
                     return $this->selectAllDvd();
                 case "revue" :
@@ -54,6 +58,33 @@ class AccessBDD {
             return null;
         }
     }
+
+
+/**
+ * récupération de toutes les lignes de la table Abonnement y compris les éléments parent de la table commande et le titre de la revue
+ * @return lignes de la requete
+ */
+    public function selectAllAbonnements(){
+        $req = "Select c.id, c.dateCommande, c.montant, a.dateFinAbonnement, a.idRevue, d.titre ";
+        $req .= "from commande c join abonnement a on c.id=a.id ";
+        $req .= "join document d on a.idRevue=d.id ";
+        $req .= "order by c.dateCommande DESC";		
+        return $this->conn->query($req);
+    }
+   
+
+    /**
+     * récupération de toutes les lignes de la table CommandeDocument y compris les éléments parent de la table commande et le titre du document
+     * @return lignes de la requete
+     */
+    public function selectAllCommandeDocument(){
+        $req = "Select c.id, c.dateCommande, c.montant, cd.nbExemplaire, cd.idLivreDvd, cd.statut, d.titre ";
+        $req .= "from commande c join commandedocument cd on c.id=cd.id ";
+        $req .= "join document d on cd.idLivreDvd=d.id ";
+        $req .= "order by c.dateCommande DESC";		
+        return $this->conn->query($req);
+    }
+   
 
     /**
      * récupération des lignes concernées
